@@ -5,7 +5,7 @@ render = {
 		// NÃO ESTOU USANDO A API PARA RETORNAR AS IMAGENS!!!!!!!!
 		let id = ('000' + pokemon.id).slice(-3);
 
-		let post = `<div id="card_pokemon">
+		let post = `<div class="card_pokemon">
         <h2>Nome: ${pokemon.name} N°${pokemon.id}</h2>
         <div id="card_info">
             <div id="poke_img">
