@@ -1,10 +1,15 @@
 render = {
 	postElementName(pokemon) {
+		// FUNÇÃO PARA ADICIONAR '00' A ESQUERDA PARA USAR A DATA BASE DO POKEDEX ONLINE
+		// https://www.pokemon.com/br/pokedex/
+		// NÃO ESTOU USANDO A API PARA RETORNAR AS IMAGENS!!!!!!!!
+		let id = ('000' + pokemon.id).slice(-3);
+
 		let post = `<div id="card_pokemon">
         <h2>Nome: ${pokemon.name} N°${pokemon.id}</h2>
         <div id="card_info">
             <div id="poke_img">
-			<img width="80%" src="${pokemon.sprites.front_default}" />
+			<img width="80%" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" />
 			</div>
             <div id="infos">
                 <div class="information">
