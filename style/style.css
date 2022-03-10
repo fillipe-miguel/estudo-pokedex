@@ -11,11 +11,15 @@ body {
 	background-color: rgb(72, 72, 72);
 }
 
+p {
+	margin-bottom: 0;
+}
+
 #card_pokemon {
 	color: white;
 	text-shadow: 1px 0px 10px black;
 	max-width: 600px;
-	padding: 10px;
+	padding: 30px;
 	background-color: #ffffff10;
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
@@ -23,11 +27,13 @@ body {
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 }
 
 #card_pokemon h2 {
 	text-align: center;
 	font-size: 2rem;
+	font-weight: 800;
 	margin-bottom: 20px;
 }
 
@@ -39,7 +45,9 @@ body {
 }
 
 #poke_img {
-	background-color: antiquewhite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #infos {
@@ -51,9 +59,11 @@ body {
 .information {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	min-width: 150px;
 	justify-content: center;
+	align-items: center;
+	background-color: #ffffff10;
+	border-radius: 10px;
+	min-width: 150px;
 	padding: 5px;
 }
 

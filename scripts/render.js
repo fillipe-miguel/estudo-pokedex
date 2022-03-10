@@ -3,7 +3,9 @@ render = {
 		let post = `<div id="card_pokemon">
         <h2>Nome: ${pokemon.name} N°${pokemon.id}</h2>
         <div id="card_info">
-            <div id="poke_img"></div>
+            <div id="poke_img">
+			<img width="80%" src="${pokemon.sprites.front_default}" />
+			</div>
             <div id="infos">
                 <div class="information">
                     <h5>Altura:</h5>
