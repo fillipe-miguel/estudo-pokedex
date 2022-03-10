@@ -8,7 +8,9 @@
 }
 
 body {
-	background-color: rgb(72, 72, 72);
+	background-image: url('../assets/bkg/bkg_main.jpg');
+	background-position-y: center;
+	background-size: 120%;
 }
 
 p {
