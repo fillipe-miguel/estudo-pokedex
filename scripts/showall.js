@@ -4,7 +4,7 @@ function showall() {
 	let pokesDiv = document.getElementById('pokes');
 
 	if (pokesDiv.dataset.represent == 'unique' || pokesDiv.innerHTML == '') {
-		pokesDiv.innerHTML = `<div id="pokes_all" class="card_pokemon all"></div><div class="d-grid gap-2 mt-2"><button onclick="showall()" class="btn btn-primary" type="button" >Carregar mais</button></div>`;
+		pokesDiv.innerHTML = `<div id="pokes_all" class="card_pokemon all"></div><div id="btn_showmore" class="d-grid gap-2 mt-2"><button onclick="showall()" class="btn btn-primary" type="button" >Carregar mais</button></div>`;
 		pokesDiv.dataset.represent = 'all';
 	}
 
@@ -24,7 +24,7 @@ function showall() {
 				return response.json();
 			})
 			.then((pokemon) => {
-				allcards += `<div class="information"><img id="poke_img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" / > <h2>${pokemon.name}</h2> </div>
+				allcards += `<div class="information"><img id="poke_img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" / > <h2 onclick="enviarCard(this)">${pokemon.name}</h2> </div>
 				`;
 			});
 

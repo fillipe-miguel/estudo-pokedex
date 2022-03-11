@@ -58,6 +58,15 @@ p {
 	margin-bottom: 20px;
 }
 
+.card_pokemon h2:hover {
+	cursor: pointer;
+}
+
+#btn_showmore {
+	max-width: 700px;
+	margin: auto;
+}
+
 /* CARD POKEMON --------------- */
 
 #card_info {
