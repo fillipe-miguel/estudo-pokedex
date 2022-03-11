@@ -10,6 +10,7 @@
 body {
 	background-image: url('../assets/bkg/bkg_main.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 p {
@@ -22,6 +23,8 @@ p {
 	background-color: #0000008e;
 }
 
+/* CARD POKEMON --------------- */
+
 .card_pokemon {
 	color: white;
 	/* text-shadow: 1px 0px 10px black; */
@@ -32,17 +35,30 @@ p {
 	-webkit-backdrop-filter: blur(12px);
 	border: 2px solid rgba(70, 70, 70, 0.426);
 	border-radius: 20px;
+}
+
+/* REFERENTE AO CARD POKEMON */
+.normal {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 }
 
+.all {
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
 .card_pokemon h2 {
 	/* text-align: center; */
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 800;
 	margin-bottom: 20px;
 }
+
+/* CARD POKEMON --------------- */
 
 #card_info {
 	width: 100%;
@@ -52,6 +68,7 @@ p {
 }
 
 #poke_img {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
